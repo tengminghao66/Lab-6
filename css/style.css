@@ -1,0 +1,20 @@
+:root {
+  --bs-primary-base: #b3341a;
+  --bs-primary-fg: light-dark(#9c2c15, #f4a08c);
+  --bs-primary-fg-emphasis: light-dark(#6e1c0b, #fbd0c4);
+  --bs-primary-bg: #b3341a;
+  --bs-primary-bg-subtle: light-dark(#fbe4dd, #4a1a10);
+  --bs-primary-bg-muted: light-dark(#f3c3b6, #6e2616);
+  --bs-primary-border: light-dark(#e8a392, #8f3320);
+  --bs-primary-focus-ring: #d8684d;
+  --bs-primary-contrast: #ffffff;
+}
+
+.btn-solid.theme-primary {
+  --bs-btn-bg: #b3341a;
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #b3341a;
+  --bs-btn-hover-bg: #8f2913;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-border-color: #8f2913;
+}

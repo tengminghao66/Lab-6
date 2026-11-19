@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Kensington Bites</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar md:navbar-expand border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kensington Bites</a>
+      <button class="navbar-toggler btn" type="button" data-bs-toggle="drawer" data-bs-target="#mainDrawer">
+        Menu
+      </button>
+
+      <dialog class="drawer drawer-end" id="mainDrawer">
+        <div class="drawer-header">
+          <h2>Menu</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="#">Tour Calendar</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1>Contact us</h1>
+    <p>Tell us which tour you would like to join and we will reply within a few days.</p>
+
+    <form action="#" method="post">
+      <div class="row g-3">
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="first-name">First name</label>
+            <input type="text" class="form-control" id="first-name" name="first-name" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="last-name">Last name</label>
+            <input type="text" class="form-control" id="last-name" name="last-name" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="tour">Choose a tour</label>
+            <select class="form-control" id="tour" name="tour" required>
+              <option value="">Choose a tour</option>
+              <option>Spadina Dim Sum Crawl</option>
+              <option>Kensington Empanada Walk</option>
+              <option>Little Italy Gelato Walk</option>
+              <option>Something else</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-field">
+            <input type="checkbox" class="check" id="consent" name="consent" required>
+            <label for="consent">I agree to be contacted about Kensington Bites tours.</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-solid theme-primary">Send message</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="border-top py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2026 Kensington Bites, a student food tour club in Toronto, by Minghao Teng.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

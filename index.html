@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Tours in Toronto</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar md:navbar-expand border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Food Tours in Toronto</a>
+      <button class="navbar-toggler btn" type="button" data-bs-toggle="drawer" data-bs-target="#mainDrawer" aria-label="Open menu">Menu</button>
+      <dialog class="drawer drawer-end" id="mainDrawer">
+        <div class="drawer-header">
+          <h2>Menu</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="#">Tour Calendar</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1>Food Tours in Toronto</h1>
+    <p>We are a campus club that walks small groups through the city's best food neighbourhoods.</p>
+
+    <div id="tourCarousel" class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide-1.jpg" class="d-block w-100 h-auto" alt="Shared plate of food on a red background">
+          <p class="text-center">Explore Toronto food!</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-2.jpg" class="d-block w-100 h-auto" alt="Small dishes on a blue background">
+          <p class="text-center">Affordable student tours.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-3.jpg" class="d-block w-100 h-auto" alt="Appetizers on a round plate, orange background">
+          <p class="text-center">Enjoy food with friends.</p>
+        </div>
+      </div>
+      <button class="btn btn-solid theme-primary" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">Previous</button>
+      <button class="btn btn-solid theme-primary" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">Next</button>
+    </div>
+
+    <h2 class="mt-5">More Toronto Tours</h2>
+    <div class="row g-4">
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-1.jpg" class="card-img-top h-auto" alt="Plate of dumplings for the Chinatown dim sum tour">
+          <div class="card-body">
+            <h3 class="h5">Spadina Dim Sum Crawl</h3>
+            <p>Steamers, tea and egg tarts across Chinatown.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We share shrimp dumplings, turnip cake and one dessert.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog1">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-2.jpg" class="card-img-top h-auto" alt="Golden empanadas for the Kensington Market tour">
+          <div class="card-body">
+            <h3 class="h5">Kensington Empanada Walk</h3>
+            <p>Hand pies, fresh juice and vintage shops.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We try savoury and sweet empanadas.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog2">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-3.jpg" class="card-img-top h-auto" alt="Scoops of gelato for the Little Italy tour">
+          <div class="card-body">
+            <h3 class="h5">Little Italy Gelato Walk</h3>
+            <p>Three gelato stops along College Street.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We taste different gelato flavours and choose our favourite.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog3">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-4.jpg" class="card-img-top h-auto" alt="Souvlaki plates for the Greektown tour">
+          <div class="card-body">
+            <h3 class="h5">Greektown Souvlaki Night</h3>
+            <p>Grilled skewers, pita and lemon potatoes.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We share chicken skewers, vegetables and potatoes.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog4">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-5.jpg" class="card-img-top h-auto" alt="Fresh pastries for the Ossington bakery tour">
+          <div class="card-body">
+            <h3 class="h5">Ossington Bakery Hop</h3>
+            <p>Croissants, buns and coffee.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We try one sweet and one savoury pastry at each bakery.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog5">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/stop-6.jpg" class="card-img-top h-auto" alt="Dessert cups for the Koreatown tour">
+          <div class="card-body">
+            <h3 class="h5">Koreatown Dessert Stroll</h3>
+            <p>Bingsu, bubble tea and Korean snacks.</p>
+            <details>
+              <summary>What we order</summary>
+              <p>We enjoy bingsu, bubble tea and Korean street food.</p>
+            </details>
+            <button class="btn btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#dialog6">Meeting details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <dialog class="dialog" id="dialog1">
+      <div class="dialog-header">
+        <h4>Spadina Dim Sum Crawl</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">Meet outside the Spadina streetcar stop.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog2">
+      <div class="dialog-header">
+        <h4>Kensington Empanada Walk</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">This tour takes about ninety minutes.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog3">
+      <div class="dialog-header">
+        <h4>Little Italy Gelato Walk</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">Enjoy gelato on a warm evening.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog4">
+      <div class="dialog-header">
+        <h4>Greektown Souvlaki Night</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">Meet near the subway station.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog5">
+      <div class="dialog-header">
+        <h4>Ossington Bakery Hop</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">Bring a tote bag for your pastries.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog6">
+      <div class="dialog-header">
+        <h4>Koreatown Dessert Stroll</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">Our tour starts at 6 pm.</div>
+      <div class="dialog-footer"><button class="btn btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+    </dialog>
+  </main>
+
+  <footer class="border-top py-4 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Food Tours in Toronto, by Minghao Teng.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
